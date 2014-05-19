@@ -1,0 +1,38 @@
+body {
+  padding-top: 60px;
+  background: #57a351;
+  /* Old browsers */
+}
+.tombstone {
+  height: 600px;
+  background: #57a351;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #b8c6df 0%, #6d88b7 52%, #6d88b7 52%, #57a351 57%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8c6df), color-stop(52%, #6d88b7), color-stop(52%, #6d88b7), color-stop(57%, #57a351));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #b8c6df 0%, #6d88b7 52%, #6d88b7 52%, #57a351 57%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #b8c6df 0%, #6d88b7 52%, #6d88b7 52%, #57a351 57%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #b8c6df 0%, #6d88b7 52%, #6d88b7 52%, #57a351 57%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #b8c6df 0%, #6d88b7 52%, #6d88b7 52%, #57a351 57%);
+  /* W3C */
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#b8c6df', endColorstr='#57a351', GradientType=0);
+  /* IE6-9 */
+}
+.navbar-fixed-top {
+  background-color: #b8c6df;
+}
+p.white {
+  color: white;
+}
+@media (min-width: 768px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+}

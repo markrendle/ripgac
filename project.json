@@ -1,0 +1,25 @@
+{
+  "version": "0.1-alpha-*",
+  "dependencies": {
+    "Helios": "0.1-alpha-build-*",
+    "Microsoft.AspNet.Diagnostics": "0.1-alpha-build-0623",
+    "Microsoft.AspNet.Hosting": "0.1-alpha-build-0519",
+    "Microsoft.AspNet.Mvc": "0.1-alpha-build-1140",
+    "Microsoft.AspNet.Server.WebListener": "0.1-alpha-build-0469",
+    "Microsoft.AspNet.StaticFiles": "0.1-alpha-build-0402",
+    "Microsoft.AspNet.Owin": "0.1-alpha-*"
+  },
+  "commands": {
+    "web": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener server.urls=http://localhost:5001",
+    "run": "run server.urls=http://localhost:5002"
+  },
+  "configurations": {
+    "net45": {
+      "dependencies": {
+        "System.Runtime": "",
+        "System.ComponentModel.DataAnnotations": ""
+      }
+    },
+    "k10": {}
+  }
+}
