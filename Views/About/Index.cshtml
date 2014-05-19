@@ -1,0 +1,18 @@
+@{
+  Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container" style="background-color: white">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 col-sm-12">
+      <h1>About this site</h1>
+      <p class="lead">
+        This site is running on the cloud-optimized Core CLR build: <strong>@ViewBag.KlrVersion srvc50 x86</strong>.
+      </p>
+      <p>It's using MVC, including controllers, routing, and Razor views with a shared layout.</p>
+      <p>It is not using System.Web or the ASP.NET Integrated Pipeline.</p>
+      <p>It is hosted on Azure Websites, deployed via FTP.</p>
+      <p>The total size of the project folder (not including images) is under 9KB.</p>
+    </div>
+  </div>
+</div>
