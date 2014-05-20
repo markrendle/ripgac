@@ -2,17 +2,30 @@
   Layout = "/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container" style="background-color: white">
+<div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2 col-sm-12">
       <h1>About this site</h1>
       <p class="lead">
-        This site is running on the cloud-optimized Core CLR build: <strong>@ViewBag.KlrVersion srvc50 x86</strong>.
+        Running on the cloud-optimized Core CLR build:<br>
+        <span class="indent"><strong>@ViewBag.KlrVersion svrc50 x86</strong></span>
       </p>
-      <p>It's using MVC, including controllers, routing, and Razor views with a shared layout.</p>
-      <p>It is not using System.Web or the ASP.NET Integrated Pipeline.</p>
+      <h3>Runtime</h3>
+      <p>It's using the new MVC, including controllers, and Razor views with a shared layout.</p>
+      <p>Most of the controllers don't actually inherit from the Controller base class.</p>
+      <p>It is <strong>not</strong> using System.Web or the ASP.NET Integrated Pipeline.</p>
+      <p>Routing, which used to be in System.Web, and thus in the Base Class Library, <a href="http://github.com/aspnet/routing">is now a stand-alone package</a>.</p>
       <p>It is hosted on Azure Websites, deployed via FTP.</p>
-      <p>The total size of the project folder (not including images) is under 9KB.</p>
+      <p>There's no build as part of the deploy process, because everything runs from the source.</p>
+      <p>The total size of the project folder (excluding images) is under 9KB.</p>
+      <h3>Tools</h3>
+      <p>Right now, the site is being edited using a combination of <a href="http://sublimetext.com/3">SublimeText 3</a> and <a href="http://brackets.io">Brackets</a>.<p>
+      <p>Microsoft haven't released the tooling for Visual Studio to work with Project K yet.</p>
+      <p>But that's not so bad, because I can run the site from the command line, and every time I change and save a C# file, it recompiles and reloads the whole site without me needing to restart anything.</p>
+      <p>Edit and continue, right?</p>
+      <p>That sounds like it might be slow, but it's not, because <a href="http://roslyn.codeplex.com/">Roslyn</a>.</p>
+      <p>Oh, you know what else is nice? Because everything is source code, and there's no bin or obj folder, there is no .gitignore file.</p>
+      <p>That'll probably change once the Visual Studio tooling arrives "in a few weeks", but for now, yay.</p>
     </div>
   </div>
 </div>

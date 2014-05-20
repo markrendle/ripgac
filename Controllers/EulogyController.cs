@@ -1,9 +1,14 @@
 using Microsoft.AspNet.Mvc;
 
-public class EulogyController : Controller
+public class EulogyController
 {
+  private readonly IActionResultHelper _result;
+  public EulogyController(IActionResultHelper result)
+  {
+    _result = result;
+  }
   public ActionResult Index()
   {
-    return View();
+    return _result.View("Index", null);
   }
 }

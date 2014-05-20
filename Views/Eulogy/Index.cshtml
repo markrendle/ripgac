@@ -2,13 +2,19 @@
   Layout = "/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container" style="background-color: white">
+<div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2 col-sm-12">
-      <h1>Eulogy</h1>
-      <p class="lead">
-        I think my fondest memory of the GAC will always be the time it tried to simultaneously hold 42 different versions of the entire Infragistics Control Suite for Web And Windows, fell off the end of the hard disk and blue-screened the entire building...
-      </p>
+      <h1>Eulogy for the GAC</h1>
+      <blockquote>
+        <p>
+          I think my fondest memory of the GAC will always be that time it tried to simultaneously hold 42 different versions of the entire <em>Infragistics Control Suite for Web And Windows</em>, fell off the end of the hard disk and blue-screened the entire campus...
+        </p>
+        <p class="pull-right">~ Scott Guthrie*</p>
+      </blockquote>
+      <p class="lead" style="margin-top: 64px">Friends, hipsters, countrymen, lend me your short attention spans; I come to bury the GAC, not to praise it. The evil that software did lives after it; the good is oft archived with its bits. So let it be with the GAC.</p>
+      <p>What can we say about the GAC that hasn't already been shouted at countless monitors by countless purple-faced developers around the world? Not much, but I'd like to take a moment to remember the time before the GAC, when shared DLLs were copied into the Windows folder and overwrote any other DLLs with the same name, even if those DLLs were from an entirely different product. The Global Assembly Cache promised us an end to that DLL Hell, and it delivered it, albeit it in a way that meant you needed to run complex installers for application components, and tricked developers into deploying ASP.NET MVC applications to production servers without the ASP.NET MVC assemblies.</p>
+      <p>Let us not dwell on the faults inherent in that system, and instead give thanks for the lessons we have learned these last fifteen years: the simple joys of XCOPY deploys; the wonders of package management; and the now-obvious realization that side-by-side versioning is a hell of a lot easier if you just ship the source.</p>
+      <p style="font-size: 0.8em">* May not, in fact, be a real quote.</p>
     </div>
-  </div>
 </div>

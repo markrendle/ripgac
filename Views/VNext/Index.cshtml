@@ -2,13 +2,13 @@
   Layout = "/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container" style="background-color: white">
+<div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2 col-sm-12">
       <div class="jumbotron">
-        <h1>ASP.NET vNext: an introduction</h1>
+        <h1>ASP.NET vNext</h1>
         <p>
-          A new ASP.NET is coming. Leaner. Lighter. Faster. And just generally more awesomer.
+          A new ASP.NET is coming. Leaner. Lighter. Faster.<br>And just generally more awesomer.
         </p>
       </div>
     </div>
@@ -19,7 +19,22 @@
         At TechEd USA in May 2014, Microsoft publicly revealed the future of .NET on the server, ASP.NET vNext.
       </p>
       <p>
-        Also known as Project K, ASP.NET vNext is a ground-up rewrite of the ASP.NET MVC, Web API and SignalR stack that liberates them from the Desktop CLR, complex project files and web.configs, build cycles, and what-have-you.
+        Also known as Project K, ASP.NET vNext is a ground-up rewrite of the ASP.NET MVC, Web API and SignalR stack that liberates them from the Desktop CLR, System.Web &amp; WebForms, complex project files and web.configs, build cycles, versioning issues, and, of course, the GAC.
+      </p>
+      <p>
+        vNext <em>will</em> run on the Desktop CLR, but it will also run on <strong>Core CLR</strong>, a stripped back version of the .NET runtime that won't even load System.String unless you tell it to.
+      </p>
+      <p>
+        Microsoft call this Core CLR <em>"cloud-optimized"</em>, because on cloud platforms you pay-as-you-go for space and memory and CPU, and a light-weight web framework reduces all of those, and runs fast and efficiently.
+      </p>
+      <p>
+        I prefer to think of it as <strong>Node.cs</strong>. Proper open-source, developed in the open, driven by a package manager, deployments consisting of a few lines of source code, only using what you need, but with all the goodness of C# (LINQ, async/await, etc), static typing and a compiler.
+      </p>
+      <p>
+        ASP.NET vNext is going to run on Windows, Linux and Mac systems, supported by Microsoft on all of them.
+      </p>
+      <p>
+        @Html.ActionLink("Check out the Resources page", "Resources", "VNext") for links to more information about ASP.NET vNext.
       </p>
     </div>
   </div>
